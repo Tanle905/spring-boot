@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping(path = "api/v1/student")
 public class StudentController {
@@ -18,7 +19,6 @@ public class StudentController {
     public List<Student> getStudent(){
         return studentService.getStudent();
     }
-
     @PostMapping
     public void registerNewStudent(@RequestBody Student student){
         studentService.addNewStudent(student);

@@ -27,5 +27,6 @@ public class StudentConfig {
                     List.of(tanle, tantran)
             );
         };
+
     }
 }
